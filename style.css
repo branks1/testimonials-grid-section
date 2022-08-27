@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 150px;
+    max-width: 1540px;
+    margin: 100px auto;
+    font-size: 13px;
+    display: grid;
+    gap: 10px;
+    background-color: hsl(0, 0%, 81%);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.card:nth-of-type(1){
+    background-color: hsl(263, 55%, 52%);
+    color: white;   
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+    grid-column: 1/3;
+}
+.card:nth-of-type(2){
+    background-color: hsl(219, 29%, 14%);
+    color: white;   
+}
+.card:nth-of-type(3){
+    background-color: white;
+    color: black;   
+}
+.card:nth-of-type(4){
+    background-color: hsl(217, 19%, 35%);
+    color: white;  
+    grid-column: 2/4; 
+}
+.card:nth-of-type(5){
+    background-color: white;
+    color: black;  
+    grid-row: 1/3;
+    grid-column: 4/5; 
+}
+
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+}
+
+.card-id{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.name{
+    margin-left: 10px;
+}
+.card-lead{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card-text{
+    opacity: 70%;
+}
+
+.card-id > img{
+    border-radius: 50%;
+    border: 1px solid rgb(232, 93, 197);
+}
+
+.name > p:nth-of-type(1){
+    font-weight: 600;
+}
+.name > p:nth-of-type(2){
+    opacity: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+   .container{
+    grid-template-columns: 1fr;
+    
+    width: 100%;
+   }
+   .card:nth-of-type(1){
+    grid-column: 1;
+    grid-row: 1;}
+    .card:nth-of-type(2){
+        grid-column: 1;
+        grid-row: 2;
+         
+    }
+    .card:nth-of-type(3){
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .card:nth-of-type(4){
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .card:nth-of-type(5){
+        grid-column: 1;
+        grid-row: 5;
+     
+    }
+ }
