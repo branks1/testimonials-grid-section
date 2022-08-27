@@ -1,0 +1,23 @@
+{
+  "name": "ose-grid-challenge-testimonials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/branks1/testimonials-grid-section.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/branks1/testimonials-grid-section/issues"
+  },
+  "homepage": "https://github.com/branks1/testimonials-grid-sections",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
